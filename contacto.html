@@ -3,39 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <form action="#" 
-        method="post" 
-        enctype="multipart/form-data" 
-        target="_blank" 
-        autocomplete="on" 
-        novalidate 
-        name="formularioDeRegistro" 
-        accept-charset="UTF-8" 
-        rel="noopener noreferrer">
-
-        <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
-        <label for="apellido">Apellido: </label>
-        <input type="text" id="apellido" name="apellido" required>
-        <br>
-        <label for="correo">Correo electronico: </label>
-        <input type="email" id="correo" name="correo" required>       
-        <br>
-        <button type="reset" value="reiniciar">Reiniciar</button>
-        <button type="submit" value="enviar">Enviar</button>
-        </form>
+    
+    <header class="header">
+        <h1>Contacto</h1>
+    </header>
+    <nav class="nav-container">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./biografia.html">Biografia</a></li>
+        </ul>
+    </nav>
+    <main class="main-container"> 
+        <div class="flex_sections">
+            <section class="section">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero veritatis dolores exercitationem quod voluptatem! Ut sequi voluptatibus, accusantium enim impedit ab tenetur eum ipsa non. Expedita, enim at? Assumenda.</p>
+            </section>   
+            <form action="#" 
+            method="post" 
+            enctype="multipart/form-data" 
+            target="_blank" 
+            autocomplete="on" 
+            novalidate 
+            name="formularioDeRegistro" 
+            accept-charset="UTF-8" 
+            rel="noopener noreferrer">
+                <fieldset>
+                    <legend>Formulario</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    <br>
+                    <label for="correo">Correo electronico: </label>
+                    <input type="email" id="correo" name="correo" required>       
+                    <br>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                    <br>
+                    <label form="fecha_actual">Fecha actual</label>
+                    <input type="date" id="fecha_actual" name="fecha_actual">
+                    <br>
+                    <button type="reset" value="reiniciar">Reiniciar</button>
+                    <button type="submit" value="enviar">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <h2>Copyrigth</h2>
     </footer>
 </body>    

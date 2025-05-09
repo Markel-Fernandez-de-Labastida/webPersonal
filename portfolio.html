@@ -3,28 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <picture>
-            <img src="./resources/img/bzS1aIUdp.png" width="500" height="300">
-        </picture>
+    
+    <header class="header">
+        <h1>Portfolio</h1>
+    </header>
+    <nav class="nav-container">
+        <ul>
+            <li><a href="./index.html">inicio</a></li>
+            <li><a href="./biografia.html">Biografia</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="main-container">
+        
+        <figure class="figure_porfolio">
+            <img src="./resources/img/fotoPropia.jpg">
+            <figcaption>Figura 2: Foto de mi cara</figcaption>
+        </figure>
+        <div class="flex_sections">
+            <section class="section_portfolio">
+                <div class="estudios">
+                    <h2>Estudios</h2>
+                </div>
+                <div class="fechas">
+                    <p>Fechas</p>
+                </div>
+                <div class="descripcion">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, impedit? Eaque nobis facilis cupiditate illum consectetur aspernatur cumque enim dicta tempore accusantium excepturi, mollitia fugit nesciunt, accusamus sit dolorem ipsum?</p>
+                </div>
+            </section>
+            <section class="section_portfolio">
+                <div class="estudios">
+                    <h2>Estudios</h2>
+                </div>
+                <div class="fechas">
+                    <p>Fechas</p>
+                </div>
+                <div class="descripcion">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, impedit? Eaque nobis facilis cupiditate illum consectetur aspernatur cumque enim dicta tempore accusantium excepturi, mollitia fugit nesciunt, accusamus sit dolorem ipsum?</p>
+                </div>
+            </section>
+        </div>
+        
+        
 
-        <iframe src="https://www.youtube.com/watch?v=mSUNnCwj1WY" width="500" height="300" loop>
-            
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/Q1sroG_iGnc?si=QrYCnukcv_sTEoBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <audio src="./resources/music/Guilty_Gear_XX_-_Still_in_the_Dark_(remix).mp3" controls>
+        <audio src="./resources/music/ATenthofMyself_GuiltyGearStriveOST.mp3" controls>
             
         </audio>
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <h2>Copyrigth</h2>
     </footer>
 
